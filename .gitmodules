@@ -1,21 +1,27 @@
 [submodule "NES_MiSTer"]
-	path = NES_MiSTer
+	path = cores/NES_MiSTer
 	url = https://github.com/MiSTer-devel/NES_MiSTer.git
 [submodule "SNES_MiSTer"]
-	path = SNES_MiSTer
+	path = cores/SNES_MiSTer
 	url = https://github.com/MiSTer-devel/SNES_MiSTer.git
 [submodule "N64"]
-	path = N64_MiSTer
+	path = cores/N64_MiSTer
 	url = https://github.com/RobertPeip/Mister64.git
 [submodule "MegaDrive_MiSTer"]
-	path = MegaDrive_MiSTer
+	path = cores/MegaDrive_MiSTer
 	url = https://github.com/MiSTer-devel/MegaDrive_MiSTer.git
 [submodule "TurboGrafx16_MiSTer"]
-	path = TurboGrafx16_MiSTer
+	path = cores/TurboGrafx16_MiSTer
 	url = https://github.com/MiSTer-devel/TurboGrafx16_MiSTer.git
 [submodule "MegaCD_MiSTer"]
-	path = MegaCD_MiSTer
+	path = cores/MegaCD_MiSTer
 	url = https://github.com/MiSTer-devel/MegaCD_MiSTer.git
 [submodule "PSX_MiSTer"]
-	path = PSX_MiSTer
+	path = cores/PSX_MiSTer
 	url = https://github.com/MiSTer-devel/PSX_MiSTer.git
+[submodule "NeoGeo_MiSTer"]
+	path = cores/NeoGeo_MiSTer
+	url = https://github.com/MiSTer-devel/NeoGeo_MiSTer.git
+[submodule "cores/GBA_MiSTer"]
+	path = cores/GBA_MiSTer
+	url = https://github.com/MiSTer-devel/GBA_MiSTer.git

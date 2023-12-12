@@ -10,17 +10,18 @@ patch_core () {
     [[ -f patches/"$CORENAME".patch ]] || shift
     for PATCHNAME in "$@"; do
         echo Applying $PATCHNAME.patch...
-        git apply --directory="$CORENAME"_MiSTer patches/"$PATCHNAME".patch
+        git apply --directory=cores/"$CORENAME"_MiSTer patches/"$PATCHNAME".patch
     done
     if [[ -f patches/"$CORENAME".pll.patch ]]; then
         echo Applying $CORENAME.pll.patch...
-        git apply --whitespace=nowarn --directory="$CORENAME"_MiSTer patches/"$CORENAME".pll.patch
+        git apply --whitespace=nowarn --directory=cores/"$CORENAME"_MiSTer patches/"$CORENAME".pll.patch
     fi 
 }
 
 patch_core MegaCD ascal video_mixer
 patch_core MegaDrive ascal
 patch_core N64 ascal
+patch_core NeoGeo ascal
 patch_core NES ascal
 patch_core PSX ascal
 patch_core SNES ascal video_mixer
