@@ -1,0 +1,47 @@
+diff --git a/N64.sv b/N64.sv
+index 7350de5..7c71a61 100644
+--- a/N64.sv
++++ b/N64.sv
+@@ -942,15 +942,15 @@ always @(posedge clk_1x) begin
+    end else begin
+       if (status[79]) begin // PAL
+          case(status[45:44]) // crop
+-            2'b00 : begin ARCoreX <= 12'd512 ; ARCoreY <= 12'd387 ; end
+-            2'b01 : begin ARCoreX <= 12'd1024; ARCoreY <= 12'd731 ; end
+-            2'b10 : begin ARCoreX <= 12'd2048; ARCoreY <= 12'd1419; end
++            2'b00 : begin ARCoreX <= 12'd525 ; ARCoreY <= 12'd387 ; end
++            2'b01 : begin ARCoreX <= 12'd1050; ARCoreY <= 12'd731 ; end
++            2'b10 : begin ARCoreX <= 12'd2099; ARCoreY <= 12'd1419; end
+          endcase;
+       end else begin // NTSC
+          case(status[45:44]) // crop
+-            2'b00 : begin ARCoreX <= 12'd512 ; ARCoreY <= 12'd381 ; end
+-            2'b01 : begin ARCoreX <= 12'd1280; ARCoreY <= 12'd889 ; end
+-            2'b10 : begin ARCoreX <= 12'd2560; ARCoreY <= 12'd1714; end
++            2'b00 : begin ARCoreX <= 12'd525 ; ARCoreY <= 12'd381 ; end
++            2'b01 : begin ARCoreX <= 12'd1312; ARCoreY <= 12'd889 ; end
++            2'b10 : begin ARCoreX <= 12'd2624; ARCoreY <= 12'd1714; end
+          endcase;
+       end
+    end
+diff --git a/rtl/VI_videoout_async.vhd b/rtl/VI_videoout_async.vhd
+index 4bfa2a5..9387807 100644
+--- a/rtl/VI_videoout_async.vhd
++++ b/rtl/VI_videoout_async.vhd
+@@ -180,12 +180,12 @@ begin
+                
+ 
+    hpos_min <= to_integer(VIDEO_H_START) when (videoout_settings.fixedBlanks = '0') else
+-               128 + OFFSET_X when (videoout_settings.isPAL = '1') else
+-               108 + OFFSET_X;
++               120 + OFFSET_X when (videoout_settings.isPAL = '1') else
++               100 + OFFSET_X;
+                
+    hpos_max <= to_integer(VIDEO_H_END) when (videoout_settings.fixedBlanks = '0') else
+-               768 + OFFSET_X when (videoout_settings.isPAL = '1') else
+-               748 + OFFSET_X;
++               776 + OFFSET_X when (videoout_settings.isPAL = '1') else
++               756 + OFFSET_X;
+ 
+    process (clkvid)
+    begin

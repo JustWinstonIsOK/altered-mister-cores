@@ -1,0 +1,13 @@
+diff --git a/sys/ascal.vhd b/sys/ascal.vhd
+index 6f085e0..2409009 100644
+--- a/sys/ascal.vhd
++++ b/sys/ascal.vhd
+@@ -125,7 +125,7 @@ ENTITY ascal IS
+ 		ADAPTIVE     : boolean := true;
+ 		DOWNSCALE_NN : boolean := false;
+ 		FRAC         : natural RANGE 4 TO 8 :=4;
+-		OHRES        : natural RANGE 1 TO 4096 :=2048;
++		OHRES        : natural RANGE 1 TO 4096 :=4096;
+ 		IHRES        : natural RANGE 1 TO 2048 :=2048;
+ 		N_DW         : natural RANGE 64 TO 128 := 128;
+ 		N_AW         : natural RANGE 8 TO 32 := 32;

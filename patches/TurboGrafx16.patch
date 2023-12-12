@@ -1,0 +1,16 @@
+diff --git a/rtl/huc6260.vhd b/rtl/huc6260.vhd
+index 3c8cff5..6ab3046 100644
+--- a/rtl/huc6260.vhd
++++ b/rtl/huc6260.vhd
+@@ -224,11 +224,6 @@ begin
+ 			V_CNT <= V_CNT + 1;
+ 			if V_CNT >= END_LINE-1 then
+ 				V_CNT <= (others => '0');
+-				if CR(2) = '1' then			-- artifact bit affects number of lines per field; check at start of field
+-				  END_LINE <= TOTAL_LINES;
+-				else
+-				  END_LINE <= TOTAL_LINES - 1;
+-				end if;
+ 			end if;
+ 			-- Reload registers
+ 			BW <= CR(7);
