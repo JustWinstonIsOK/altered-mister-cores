@@ -5,7 +5,7 @@ QUARTUS_SH=/c/intelFPGA_lite/17.0/quartus/bin64/quartus_sh
 
 mkdir -p out
 
-for CORE_DIRECTORY in $(find cores/ -maxdepth 1 -type d -name "*_MiSTer"); do
+for CORE_DIRECTORY in $(find cores/ -maxdepth 1 -type d -name "*_MiSTer" -and -not -name "TurboGrafx16_MiSTer"); do
     cd "$CORE_DIRECTORY"
     QPF_NAMES=($(ls *.qpf))
     RBF_NAME=$(basename ${QPF_NAMES[0]} .qpf)

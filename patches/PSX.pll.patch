@@ -1,5 +1,797 @@
+diff --git a/rtl/pll.qip b/rtl/pll.qip
+index f204872..e814ba3 100644
+--- a/rtl/pll.qip
++++ b/rtl/pll.qip
+@@ -41,10 +41,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2ZyYWNfbXVsdGlwbHlfZmFjdG9y::MQ==::RnJhY3Rpb25hbCBNdWx0aXBseSBGYWN0b3IgKEsp"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3Jfbg==::MQ==::RGl2aWRlIEZhY3RvciAoTi1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjA=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::MzMuODY4OA==::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::MzMuOTcyMjI3::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzA=::MQ==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iw::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::NTUxOTU0NzUx::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::NjU4NTY2NTc3::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMA==::MTI=::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MA==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMA==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+@@ -53,10 +53,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDA=::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUw::NTA=::RHV0eSBDeWNsZQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjE=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kx::NjcuNzM3Ng==::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kx::NjcuOTQ0NDU0::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzE=::MQ==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Ix::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjE=::NTUxOTU0NzUx::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjE=::NjU4NTY2NTc3::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMQ==::Ng==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MQ==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMQ==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+@@ -65,10 +65,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDE=::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUx::NTA=::RHV0eSBDeWNsZQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjI=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3ky::MTAxLjYwNjQ=::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3ky::MTAxLjkxNjY4MQ==::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzI=::MQ==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iy::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjI=::NTUxOTU0NzUx::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjI=::NjU4NTY2NTc3::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMg==::NA==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5Mg==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMg==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+@@ -79,9 +79,9 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjM=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kz::MjEuNDc3Mjc=::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzM=::MQ==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iz::Mjg=::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjM=::MTkzMTgzNjM0Nw==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMw==::NjY=::QWN0dWFsIERpdmlkZSBGYWN0b3I="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iz::MQ==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjM=::MQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMw==::MQ==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5Mw==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMw==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BoYXNlX3NoaWZ0Mw==::MA==::UGhhc2UgU2hpZnQ="
+@@ -256,13 +256,13 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BoYXNlX3NoaWZ0X2RlZzE3::MC4w::UGhhc2UgU2hpZnQ="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDE3::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUxNw==::NTA=::RHV0eSBDeWNsZQ=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::MzMuODY4ODAwIE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::MzMuOTcyMjI3IE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQw::MCBwcw==::cGhhc2Vfc2hpZnQw"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTA=::NTA=::ZHV0eV9jeWNsZTA="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE=::NjcuNzM3NjAwIE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE=::NjcuOTQ0NDU0IE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQx::MCBwcw==::cGhhc2Vfc2hpZnQx"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTE=::NTA=::ZHV0eV9jeWNsZTE="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI=::MTAxLjYwNjQwMCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI=::MTAxLjkxNjY4MSBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQy::MCBwcw==::cGhhc2Vfc2hpZnQy"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTI=::NTA=::ZHV0eV9jeWNsZTI="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTM=::MCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTM="
+@@ -318,7 +318,7 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX3R5cGU=::R2VuZXJhbA==::UExMIFRZUEU="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX3N1YnR5cGU=::R2VuZXJhbA==::UExMIFNVQlRZUEU="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl9saXN0::TS1Db3VudGVyIEhpIERpdmlkZSxNLUNvdW50ZXIgTG93IERpdmlkZSxOLUNvdW50ZXIgSGkgRGl2aWRlLE4tQ291bnRlciBMb3cgRGl2aWRlLE0tQ291bnRlciBCeXBhc3MgRW5hYmxlLE4tQ291bnRlciBCeXBhc3MgRW5hYmxlLE0tQ291bnRlciBPZGQgRGl2aWRlIEVuYWJsZSxOLUNvdW50ZXIgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTAgSGkgRGl2aWRlLEMtQ291bnRlci0wIExvdyBEaXZpZGUsQy1Db3VudGVyLTAgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0wIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTAgSW5wdXQgU291cmNlLEMtQ291bnRlci0wIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTAgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTEgSGkgRGl2aWRlLEMtQ291bnRlci0xIExvdyBEaXZpZGUsQy1Db3VudGVyLTEgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0xIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTEgSW5wdXQgU291cmNlLEMtQ291bnRlci0xIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTEgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTIgSGkgRGl2aWRlLEMtQ291bnRlci0yIExvdyBEaXZpZGUsQy1Db3VudGVyLTIgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0yIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTIgSW5wdXQgU291cmNlLEMtQ291bnRlci0yIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTIgT2RkIERpdmlkZSBFbmFibGUsVkNPIFBvc3QgRGl2aWRlIENvdW50ZXIgRW5hYmxlLENoYXJnZSBQdW1wIGN1cnJlbnQgKHVBKSxMb29wIEZpbHRlciBCYW5kd2lkdGggUmVzaXN0b3IgKE9obXMpICxQTEwgT3V0cHV0IFZDTyBGcmVxdWVuY3ksSy1GcmFjdGlvbmFsIERpdmlzaW9uIFZhbHVlIChEU00pLEZlZWRiYWNrIENsb2NrIFR5cGUsRmVlZGJhY2sgQ2xvY2sgTVVYIDEsRmVlZGJhY2sgQ2xvY2sgTVVYIDIsTSBDb3VudGVyIFNvdXJjZSBNVVgsUExMIEF1dG8gUmVzZXQ=::UGFyYW1ldGVyIE5hbWVz"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw2LDYsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMywzLDEsMCxwaF9tdXhfY2xrLGZhbHNlLGZhbHNlLDIsMiwxLDAscGhfbXV4X2NsayxmYWxzZSxmYWxzZSwyLDIwLDQwMDAsNDA2LjQyNTU5OSBNSHosNTUxOTU0NzUxLG5vbmUsZ2xiLG1fY250LHBoX211eF9jbGssdHJ1ZQ==::UGFyYW1ldGVyIFZhbHVlcw=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw2LDYsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMywzLDEsMCxwaF9tdXhfY2xrLGZhbHNlLGZhbHNlLDIsMiwxLDAscGhfbXV4X2NsayxmYWxzZSxmYWxzZSwyLDIwLDQwMDAsNDA3LjY2NjcyNCBNSHosNjU4NTY2NTc3LG5vbmUsZ2xiLG1fY250LHBoX211eF9jbGssdHJ1ZQ==::UGFyYW1ldGVyIFZhbHVlcw=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX21pZl9nZW5lcmF0ZQ==::ZmFsc2U=::R2VuZXJhdGUgTUlGIGZpbGU="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2VuYWJsZV9taWZfZHBz::ZmFsc2U=::RW5hYmxlIER5bmFtaWMgUGhhc2UgU2hpZnQgZm9yIE1JRiBzdHJlYW1pbmc="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Rwc19jbnRy::QzA=::RFBTIENvdW50ZXIgU2VsZWN0aW9u"
+diff --git a/rtl/pll.v b/rtl/pll.v
+index 457547e..71606ab 100644
+--- a/rtl/pll.v
++++ b/rtl/pll.v
+@@ -1,257 +1,257 @@
+-// megafunction wizard: %Altera PLL v17.0%
+-// GENERATION: XML
+-// pll.v
+-
+-// Generated using ACDS version 17.0 595
+-
+-`timescale 1 ps / 1 ps
+-module pll (
+-		input  wire  refclk,   //  refclk.clk
+-		input  wire  rst,      //   reset.reset
+-		output wire  outclk_0, // outclk0.clk
+-		output wire  outclk_1, // outclk1.clk
+-		output wire  outclk_2, // outclk2.clk
+-		output wire  locked    //  locked.export
+-	);
+-
+-	pll_0002 pll_inst (
+-		.refclk   (refclk),   //  refclk.clk
+-		.rst      (rst),      //   reset.reset
+-		.outclk_0 (outclk_0), // outclk0.clk
+-		.outclk_1 (outclk_1), // outclk1.clk
+-		.outclk_2 (outclk_2), // outclk2.clk
+-		.locked   (locked)    //  locked.export
+-	);
+-
+-endmodule
+-// Retrieval info: <?xml version="1.0"?>
+-//<!--
+-//	Generated by Altera MegaWizard Launcher Utility version 1.0
+-//	************************************************************
+-//	THIS IS A WIZARD-GENERATED FILE. DO NOT EDIT THIS FILE!
+-//	************************************************************
+-//	Copyright (C) 1991-2021 Altera Corporation
+-//	Any megafunction design, and related net list (encrypted or decrypted),
+-//	support information, device programming or simulation file, and any other
+-//	associated documentation or information provided by Altera or a partner
+-//	under Altera's Megafunction Partnership Program may be used only to
+-//	program PLD devices (but not masked PLD devices) from Altera.  Any other
+-//	use of such megafunction design, net list, support information, device
+-//	programming or simulation file, or any other related documentation or
+-//	information is prohibited for any other purpose, including, but not
+-//	limited to modification, reverse engineering, de-compiling, or use with
+-//	any other silicon devices, unless such use is explicitly licensed under
+-//	a separate agreement with Altera or a megafunction partner.  Title to
+-//	the intellectual property, including patents, copyrights, trademarks,
+-//	trade secrets, or maskworks, embodied in any such megafunction design,
+-//	net list, support information, device programming or simulation file, or
+-//	any other related documentation or information provided by Altera or a
+-//	megafunction partner, remains with Altera, the megafunction partner, or
+-//	their respective licensors.  No other licenses, including any licenses
+-//	needed under any third party's intellectual property, are provided herein.
+-//-->
+-// Retrieval info: <instance entity-name="altera_pll" version="17.0" >
+-// Retrieval info: 	<generic name="debug_print_output" value="false" />
+-// Retrieval info: 	<generic name="debug_use_rbc_taf_method" value="false" />
+-// Retrieval info: 	<generic name="device_family" value="Cyclone V" />
+-// Retrieval info: 	<generic name="device" value="5CEBA2F17A7" />
+-// Retrieval info: 	<generic name="gui_device_speed_grade" value="2" />
+-// Retrieval info: 	<generic name="gui_pll_mode" value="Fractional-N PLL" />
+-// Retrieval info: 	<generic name="gui_reference_clock_frequency" value="50.0" />
+-// Retrieval info: 	<generic name="gui_channel_spacing" value="0.0" />
+-// Retrieval info: 	<generic name="gui_operation_mode" value="direct" />
+-// Retrieval info: 	<generic name="gui_feedback_clock" value="Global Clock" />
+-// Retrieval info: 	<generic name="gui_fractional_cout" value="32" />
+-// Retrieval info: 	<generic name="gui_dsm_out_sel" value="1st_order" />
+-// Retrieval info: 	<generic name="gui_use_locked" value="true" />
+-// Retrieval info: 	<generic name="gui_en_adv_params" value="false" />
+-// Retrieval info: 	<generic name="gui_number_of_clocks" value="3" />
+-// Retrieval info: 	<generic name="gui_multiply_factor" value="1" />
+-// Retrieval info: 	<generic name="gui_frac_multiply_factor" value="1" />
+-// Retrieval info: 	<generic name="gui_divide_factor_n" value="1" />
+-// Retrieval info: 	<generic name="gui_cascade_counter0" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="33.8688" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c0" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency0" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units0" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift0" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg0" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift0" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle0" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter1" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency1" value="67.7376" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c1" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency1" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units1" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift1" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg1" value="-60.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift1" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle1" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter2" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency2" value="101.6064" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c2" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency2" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units2" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift2" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg2" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift2" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle2" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter3" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency3" value="21.47727" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c3" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency3" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units3" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift3" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg3" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift3" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle3" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter4" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency4" value="112.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c4" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency4" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units4" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift4" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg4" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift4" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle4" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter5" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency5" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c5" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency5" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units5" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift5" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg5" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift5" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle5" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter6" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency6" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c6" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency6" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units6" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift6" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg6" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift6" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle6" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter7" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency7" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c7" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency7" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units7" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift7" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg7" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift7" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle7" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter8" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency8" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c8" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency8" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units8" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift8" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg8" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift8" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle8" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter9" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency9" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c9" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency9" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units9" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift9" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg9" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift9" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle9" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter10" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency10" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c10" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency10" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units10" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift10" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg10" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift10" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle10" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter11" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency11" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c11" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency11" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units11" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift11" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg11" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift11" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle11" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter12" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency12" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c12" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency12" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units12" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift12" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg12" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift12" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle12" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter13" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency13" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c13" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency13" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units13" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift13" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg13" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift13" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle13" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter14" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency14" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c14" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency14" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units14" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift14" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg14" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift14" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle14" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter15" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency15" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c15" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency15" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units15" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift15" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg15" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift15" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle15" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter16" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency16" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c16" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency16" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units16" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift16" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg16" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift16" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle16" value="50" />
+-// Retrieval info: 	<generic name="gui_cascade_counter17" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency17" value="100.0" />
+-// Retrieval info: 	<generic name="gui_divide_factor_c17" value="1" />
+-// Retrieval info: 	<generic name="gui_actual_output_clock_frequency17" value="0 MHz" />
+-// Retrieval info: 	<generic name="gui_ps_units17" value="ps" />
+-// Retrieval info: 	<generic name="gui_phase_shift17" value="0" />
+-// Retrieval info: 	<generic name="gui_phase_shift_deg17" value="0.0" />
+-// Retrieval info: 	<generic name="gui_actual_phase_shift17" value="0" />
+-// Retrieval info: 	<generic name="gui_duty_cycle17" value="50" />
+-// Retrieval info: 	<generic name="gui_pll_auto_reset" value="On" />
+-// Retrieval info: 	<generic name="gui_pll_bandwidth_preset" value="Auto" />
+-// Retrieval info: 	<generic name="gui_en_reconf" value="false" />
+-// Retrieval info: 	<generic name="gui_en_dps_ports" value="false" />
+-// Retrieval info: 	<generic name="gui_en_phout_ports" value="false" />
+-// Retrieval info: 	<generic name="gui_phout_division" value="1" />
+-// Retrieval info: 	<generic name="gui_mif_generate" value="false" />
+-// Retrieval info: 	<generic name="gui_enable_mif_dps" value="false" />
+-// Retrieval info: 	<generic name="gui_dps_cntr" value="C0" />
+-// Retrieval info: 	<generic name="gui_dps_num" value="1" />
+-// Retrieval info: 	<generic name="gui_dps_dir" value="Positive" />
+-// Retrieval info: 	<generic name="gui_refclk_switch" value="false" />
+-// Retrieval info: 	<generic name="gui_refclk1_frequency" value="100.0" />
+-// Retrieval info: 	<generic name="gui_switchover_mode" value="Automatic Switchover" />
+-// Retrieval info: 	<generic name="gui_switchover_delay" value="0" />
+-// Retrieval info: 	<generic name="gui_active_clk" value="false" />
+-// Retrieval info: 	<generic name="gui_clk_bad" value="false" />
+-// Retrieval info: 	<generic name="gui_enable_cascade_out" value="false" />
+-// Retrieval info: 	<generic name="gui_cascade_outclk_index" value="0" />
+-// Retrieval info: 	<generic name="gui_enable_cascade_in" value="false" />
+-// Retrieval info: 	<generic name="gui_pll_cascading_mode" value="Create an adjpllin signal to connect with an upstream PLL" />
+-// Retrieval info: </instance>
+-// IPFS_FILES : pll.vo
+-// RELATED_FILES: pll.v, pll_0002.v
++// megafunction wizard: %Altera PLL v17.0%
++// GENERATION: XML
++// pll.v
++
++// Generated using ACDS version 17.0 602
++
++`timescale 1 ps / 1 ps
++module pll (
++		input  wire  refclk,   //  refclk.clk
++		input  wire  rst,      //   reset.reset
++		output wire  outclk_0, // outclk0.clk
++		output wire  outclk_1, // outclk1.clk
++		output wire  outclk_2, // outclk2.clk
++		output wire  locked    //  locked.export
++	);
++
++	pll_0002 pll_inst (
++		.refclk   (refclk),   //  refclk.clk
++		.rst      (rst),      //   reset.reset
++		.outclk_0 (outclk_0), // outclk0.clk
++		.outclk_1 (outclk_1), // outclk1.clk
++		.outclk_2 (outclk_2), // outclk2.clk
++		.locked   (locked)    //  locked.export
++	);
++
++endmodule
++// Retrieval info: <?xml version="1.0"?>
++//<!--
++//	Generated by Altera MegaWizard Launcher Utility version 1.0
++//	************************************************************
++//	THIS IS A WIZARD-GENERATED FILE. DO NOT EDIT THIS FILE!
++//	************************************************************
++//	Copyright (C) 1991-2023 Altera Corporation
++//	Any megafunction design, and related net list (encrypted or decrypted),
++//	support information, device programming or simulation file, and any other
++//	associated documentation or information provided by Altera or a partner
++//	under Altera's Megafunction Partnership Program may be used only to
++//	program PLD devices (but not masked PLD devices) from Altera.  Any other
++//	use of such megafunction design, net list, support information, device
++//	programming or simulation file, or any other related documentation or
++//	information is prohibited for any other purpose, including, but not
++//	limited to modification, reverse engineering, de-compiling, or use with
++//	any other silicon devices, unless such use is explicitly licensed under
++//	a separate agreement with Altera or a megafunction partner.  Title to
++//	the intellectual property, including patents, copyrights, trademarks,
++//	trade secrets, or maskworks, embodied in any such megafunction design,
++//	net list, support information, device programming or simulation file, or
++//	any other related documentation or information provided by Altera or a
++//	megafunction partner, remains with Altera, the megafunction partner, or
++//	their respective licensors.  No other licenses, including any licenses
++//	needed under any third party's intellectual property, are provided herein.
++//-->
++// Retrieval info: <instance entity-name="altera_pll" version="17.0" >
++// Retrieval info: 	<generic name="debug_print_output" value="false" />
++// Retrieval info: 	<generic name="debug_use_rbc_taf_method" value="false" />
++// Retrieval info: 	<generic name="device_family" value="Cyclone V" />
++// Retrieval info: 	<generic name="device" value="5CEBA2F17A7" />
++// Retrieval info: 	<generic name="gui_device_speed_grade" value="2" />
++// Retrieval info: 	<generic name="gui_pll_mode" value="Fractional-N PLL" />
++// Retrieval info: 	<generic name="gui_reference_clock_frequency" value="50.0" />
++// Retrieval info: 	<generic name="gui_channel_spacing" value="0.0" />
++// Retrieval info: 	<generic name="gui_operation_mode" value="direct" />
++// Retrieval info: 	<generic name="gui_feedback_clock" value="Global Clock" />
++// Retrieval info: 	<generic name="gui_fractional_cout" value="32" />
++// Retrieval info: 	<generic name="gui_dsm_out_sel" value="1st_order" />
++// Retrieval info: 	<generic name="gui_use_locked" value="true" />
++// Retrieval info: 	<generic name="gui_en_adv_params" value="false" />
++// Retrieval info: 	<generic name="gui_number_of_clocks" value="3" />
++// Retrieval info: 	<generic name="gui_multiply_factor" value="1" />
++// Retrieval info: 	<generic name="gui_frac_multiply_factor" value="1" />
++// Retrieval info: 	<generic name="gui_divide_factor_n" value="1" />
++// Retrieval info: 	<generic name="gui_cascade_counter0" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="33.972227" />
++// Retrieval info: 	<generic name="gui_divide_factor_c0" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency0" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units0" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift0" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg0" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift0" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle0" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter1" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency1" value="67.944454" />
++// Retrieval info: 	<generic name="gui_divide_factor_c1" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency1" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units1" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift1" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg1" value="-60.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift1" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle1" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter2" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency2" value="101.916681" />
++// Retrieval info: 	<generic name="gui_divide_factor_c2" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency2" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units2" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift2" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg2" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift2" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle2" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter3" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency3" value="21.47727" />
++// Retrieval info: 	<generic name="gui_divide_factor_c3" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency3" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units3" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift3" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg3" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift3" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle3" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter4" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency4" value="112.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c4" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency4" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units4" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift4" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg4" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift4" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle4" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter5" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency5" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c5" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency5" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units5" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift5" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg5" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift5" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle5" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter6" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency6" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c6" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency6" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units6" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift6" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg6" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift6" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle6" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter7" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency7" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c7" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency7" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units7" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift7" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg7" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift7" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle7" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter8" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency8" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c8" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency8" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units8" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift8" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg8" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift8" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle8" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter9" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency9" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c9" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency9" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units9" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift9" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg9" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift9" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle9" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter10" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency10" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c10" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency10" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units10" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift10" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg10" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift10" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle10" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter11" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency11" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c11" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency11" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units11" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift11" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg11" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift11" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle11" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter12" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency12" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c12" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency12" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units12" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift12" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg12" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift12" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle12" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter13" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency13" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c13" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency13" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units13" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift13" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg13" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift13" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle13" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter14" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency14" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c14" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency14" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units14" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift14" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg14" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift14" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle14" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter15" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency15" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c15" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency15" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units15" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift15" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg15" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift15" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle15" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter16" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency16" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c16" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency16" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units16" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift16" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg16" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift16" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle16" value="50" />
++// Retrieval info: 	<generic name="gui_cascade_counter17" value="false" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency17" value="100.0" />
++// Retrieval info: 	<generic name="gui_divide_factor_c17" value="1" />
++// Retrieval info: 	<generic name="gui_actual_output_clock_frequency17" value="0 MHz" />
++// Retrieval info: 	<generic name="gui_ps_units17" value="ps" />
++// Retrieval info: 	<generic name="gui_phase_shift17" value="0" />
++// Retrieval info: 	<generic name="gui_phase_shift_deg17" value="0.0" />
++// Retrieval info: 	<generic name="gui_actual_phase_shift17" value="0" />
++// Retrieval info: 	<generic name="gui_duty_cycle17" value="50" />
++// Retrieval info: 	<generic name="gui_pll_auto_reset" value="On" />
++// Retrieval info: 	<generic name="gui_pll_bandwidth_preset" value="Auto" />
++// Retrieval info: 	<generic name="gui_en_reconf" value="false" />
++// Retrieval info: 	<generic name="gui_en_dps_ports" value="false" />
++// Retrieval info: 	<generic name="gui_en_phout_ports" value="false" />
++// Retrieval info: 	<generic name="gui_phout_division" value="1" />
++// Retrieval info: 	<generic name="gui_mif_generate" value="false" />
++// Retrieval info: 	<generic name="gui_enable_mif_dps" value="false" />
++// Retrieval info: 	<generic name="gui_dps_cntr" value="C0" />
++// Retrieval info: 	<generic name="gui_dps_num" value="1" />
++// Retrieval info: 	<generic name="gui_dps_dir" value="Positive" />
++// Retrieval info: 	<generic name="gui_refclk_switch" value="false" />
++// Retrieval info: 	<generic name="gui_refclk1_frequency" value="100.0" />
++// Retrieval info: 	<generic name="gui_switchover_mode" value="Automatic Switchover" />
++// Retrieval info: 	<generic name="gui_switchover_delay" value="0" />
++// Retrieval info: 	<generic name="gui_active_clk" value="false" />
++// Retrieval info: 	<generic name="gui_clk_bad" value="false" />
++// Retrieval info: 	<generic name="gui_enable_cascade_out" value="false" />
++// Retrieval info: 	<generic name="gui_cascade_outclk_index" value="0" />
++// Retrieval info: 	<generic name="gui_enable_cascade_in" value="false" />
++// Retrieval info: 	<generic name="gui_pll_cascading_mode" value="Create an adjpllin signal to connect with an upstream PLL" />
++// Retrieval info: </instance>
++// IPFS_FILES : pll.vo
++// RELATED_FILES: pll.v, pll_0002.v
+diff --git a/rtl/pll/pll_0002.v b/rtl/pll/pll_0002.v
+index d9fadf8..711a3c1 100644
+--- a/rtl/pll/pll_0002.v
++++ b/rtl/pll/pll_0002.v
+@@ -1,93 +1,93 @@
+-`timescale 1ns/10ps
+-module  pll_0002(
+-
+-	// interface 'refclk'
+-	input wire refclk,
+-
+-	// interface 'reset'
+-	input wire rst,
+-
+-	// interface 'outclk0'
+-	output wire outclk_0,
+-
+-	// interface 'outclk1'
+-	output wire outclk_1,
+-
+-	// interface 'outclk2'
+-	output wire outclk_2,
+-
+-	// interface 'locked'
+-	output wire locked
+-);
+-
+-	altera_pll #(
+-		.fractional_vco_multiplier("true"),
+-		.reference_clock_frequency("50.0 MHz"),
+-		.operation_mode("direct"),
+-		.number_of_clocks(3),
+-		.output_clock_frequency0("33.868800 MHz"),
+-		.phase_shift0("0 ps"),
+-		.duty_cycle0(50),
+-		.output_clock_frequency1("67.737600 MHz"),
+-		.phase_shift1("0 ps"),
+-		.duty_cycle1(50),
+-		.output_clock_frequency2("101.606400 MHz"),
+-		.phase_shift2("0 ps"),
+-		.duty_cycle2(50),
+-		.output_clock_frequency3("0 MHz"),
+-		.phase_shift3("0 ps"),
+-		.duty_cycle3(50),
+-		.output_clock_frequency4("0 MHz"),
+-		.phase_shift4("0 ps"),
+-		.duty_cycle4(50),
+-		.output_clock_frequency5("0 MHz"),
+-		.phase_shift5("0 ps"),
+-		.duty_cycle5(50),
+-		.output_clock_frequency6("0 MHz"),
+-		.phase_shift6("0 ps"),
+-		.duty_cycle6(50),
+-		.output_clock_frequency7("0 MHz"),
+-		.phase_shift7("0 ps"),
+-		.duty_cycle7(50),
+-		.output_clock_frequency8("0 MHz"),
+-		.phase_shift8("0 ps"),
+-		.duty_cycle8(50),
+-		.output_clock_frequency9("0 MHz"),
+-		.phase_shift9("0 ps"),
+-		.duty_cycle9(50),
+-		.output_clock_frequency10("0 MHz"),
+-		.phase_shift10("0 ps"),
+-		.duty_cycle10(50),
+-		.output_clock_frequency11("0 MHz"),
+-		.phase_shift11("0 ps"),
+-		.duty_cycle11(50),
+-		.output_clock_frequency12("0 MHz"),
+-		.phase_shift12("0 ps"),
+-		.duty_cycle12(50),
+-		.output_clock_frequency13("0 MHz"),
+-		.phase_shift13("0 ps"),
+-		.duty_cycle13(50),
+-		.output_clock_frequency14("0 MHz"),
+-		.phase_shift14("0 ps"),
+-		.duty_cycle14(50),
+-		.output_clock_frequency15("0 MHz"),
+-		.phase_shift15("0 ps"),
+-		.duty_cycle15(50),
+-		.output_clock_frequency16("0 MHz"),
+-		.phase_shift16("0 ps"),
+-		.duty_cycle16(50),
+-		.output_clock_frequency17("0 MHz"),
+-		.phase_shift17("0 ps"),
+-		.duty_cycle17(50),
+-		.pll_type("General"),
+-		.pll_subtype("General")
+-	) altera_pll_i (
+-		.rst	(rst),
+-		.outclk	({outclk_2, outclk_1, outclk_0}),
+-		.locked	(locked),
+-		.fboutclk	( ),
+-		.fbclk	(1'b0),
+-		.refclk	(refclk)
+-	);
+-endmodule
+-
++`timescale 1ns/10ps
++module  pll_0002(
++
++	// interface 'refclk'
++	input wire refclk,
++
++	// interface 'reset'
++	input wire rst,
++
++	// interface 'outclk0'
++	output wire outclk_0,
++
++	// interface 'outclk1'
++	output wire outclk_1,
++
++	// interface 'outclk2'
++	output wire outclk_2,
++
++	// interface 'locked'
++	output wire locked
++);
++
++	altera_pll #(
++		.fractional_vco_multiplier("true"),
++		.reference_clock_frequency("50.0 MHz"),
++		.operation_mode("direct"),
++		.number_of_clocks(3),
++		.output_clock_frequency0("33.972227 MHz"),
++		.phase_shift0("0 ps"),
++		.duty_cycle0(50),
++		.output_clock_frequency1("67.944454 MHz"),
++		.phase_shift1("0 ps"),
++		.duty_cycle1(50),
++		.output_clock_frequency2("101.916681 MHz"),
++		.phase_shift2("0 ps"),
++		.duty_cycle2(50),
++		.output_clock_frequency3("0 MHz"),
++		.phase_shift3("0 ps"),
++		.duty_cycle3(50),
++		.output_clock_frequency4("0 MHz"),
++		.phase_shift4("0 ps"),
++		.duty_cycle4(50),
++		.output_clock_frequency5("0 MHz"),
++		.phase_shift5("0 ps"),
++		.duty_cycle5(50),
++		.output_clock_frequency6("0 MHz"),
++		.phase_shift6("0 ps"),
++		.duty_cycle6(50),
++		.output_clock_frequency7("0 MHz"),
++		.phase_shift7("0 ps"),
++		.duty_cycle7(50),
++		.output_clock_frequency8("0 MHz"),
++		.phase_shift8("0 ps"),
++		.duty_cycle8(50),
++		.output_clock_frequency9("0 MHz"),
++		.phase_shift9("0 ps"),
++		.duty_cycle9(50),
++		.output_clock_frequency10("0 MHz"),
++		.phase_shift10("0 ps"),
++		.duty_cycle10(50),
++		.output_clock_frequency11("0 MHz"),
++		.phase_shift11("0 ps"),
++		.duty_cycle11(50),
++		.output_clock_frequency12("0 MHz"),
++		.phase_shift12("0 ps"),
++		.duty_cycle12(50),
++		.output_clock_frequency13("0 MHz"),
++		.phase_shift13("0 ps"),
++		.duty_cycle13(50),
++		.output_clock_frequency14("0 MHz"),
++		.phase_shift14("0 ps"),
++		.duty_cycle14(50),
++		.output_clock_frequency15("0 MHz"),
++		.phase_shift15("0 ps"),
++		.duty_cycle15(50),
++		.output_clock_frequency16("0 MHz"),
++		.phase_shift16("0 ps"),
++		.duty_cycle16(50),
++		.output_clock_frequency17("0 MHz"),
++		.phase_shift17("0 ps"),
++		.duty_cycle17(50),
++		.pll_type("General"),
++		.pll_subtype("General")
++	) altera_pll_i (
++		.rst	(rst),
++		.outclk	({outclk_2, outclk_1, outclk_0}),
++		.locked	(locked),
++		.fboutclk	( ),
++		.fbclk	(1'b0),
++		.refclk	(refclk)
++	);
++endmodule
++
 diff --git a/rtl/pll2.qip b/rtl/pll2.qip
-index 2c7df1f..fb035e0 100644
+index 2c7df1f..4834607 100644
 --- a/rtl/pll2.qip
 +++ b/rtl/pll2.qip
 @@ -43,10 +43,10 @@ set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PAR
@@ -7,11 +799,11 @@ index 2c7df1f..fb035e0 100644
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3Jfbg==::MQ==::RGl2aWRlIEZhY3RvciAoTi1Db3VudGVyKQ=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjA=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::NTMuNjkzMTc1::RGVzaXJlZCBGcmVxdWVuY3k="
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::NTMuODQ5MjU=::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::NTMuODU3MTQ=::RGVzaXJlZCBGcmVxdWVuY3k="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzA=::MQ==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iw::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MjUzNzkzMDUzNQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MjY0NTE4NDM3Mg==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MjY1MDYwNjQyNQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMA==::OA==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MA==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMA==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
@@ -20,7 +812,7 @@ index 2c7df1f..fb035e0 100644
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDE3::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUxNw==::NTA=::RHV0eSBDeWNsZQ=="
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::NTMuNjkzMTc1IE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::NTMuODQ5MjUwIE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::NTMuODU3MTQwIE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQw::MCBwcw==::cGhhc2Vfc2hpZnQw"
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTA=::NTA=::ZHV0eV9jeWNsZTA="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE=::MCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE="
@@ -30,8 +822,8 @@ index 2c7df1f..fb035e0 100644
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2J3Y3RybA==::NDAwMA==::cGxsX2J3Y3RybA=="
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5::NDI5LjU0NTQgTUh6::cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5"
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24=::MjUzNzkzMDUzNQ==::cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24="
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5::NDMwLjc5Mzk5OSBNSHo=::cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5"
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24=::MjY0NTE4NDM3Mg==::cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24="
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5::NDMwLjg1NzEyIE1Ieg==::cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5"
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24=::MjY1MDYwNjQyNQ==::cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "bWltaWNfZmJjbGtfdHlwZQ==::bm9uZQ==::bWltaWNfZmJjbGtfdHlwZQ=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2ZiY2xrX211eF8x::Z2xi::cGxsX2ZiY2xrX211eF8x"
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX2ZiY2xrX211eF8y::bV9jbnQ=::cGxsX2ZiY2xrX211eF8y"
@@ -39,12 +831,12 @@ index 2c7df1f..fb035e0 100644
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "cGxsX3NsZl9yc3Q=::dHJ1ZQ==::cGxsX3NsZl9yc3Q="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl9saXN0::TS1Db3VudGVyIEhpIERpdmlkZSxNLUNvdW50ZXIgTG93IERpdmlkZSxOLUNvdW50ZXIgSGkgRGl2aWRlLE4tQ291bnRlciBMb3cgRGl2aWRlLE0tQ291bnRlciBCeXBhc3MgRW5hYmxlLE4tQ291bnRlciBCeXBhc3MgRW5hYmxlLE0tQ291bnRlciBPZGQgRGl2aWRlIEVuYWJsZSxOLUNvdW50ZXIgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTAgSGkgRGl2aWRlLEMtQ291bnRlci0wIExvdyBEaXZpZGUsQy1Db3VudGVyLTAgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0wIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTAgSW5wdXQgU291cmNlLEMtQ291bnRlci0wIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTAgT2RkIERpdmlkZSBFbmFibGUsVkNPIFBvc3QgRGl2aWRlIENvdW50ZXIgRW5hYmxlLENoYXJnZSBQdW1wIGN1cnJlbnQgKHVBKSxMb29wIEZpbHRlciBCYW5kd2lkdGggUmVzaXN0b3IgKE9obXMpICxQTEwgT3V0cHV0IFZDTyBGcmVxdWVuY3ksSy1GcmFjdGlvbmFsIERpdmlzaW9uIFZhbHVlIChEU00pLEZlZWRiYWNrIENsb2NrIFR5cGUsRmVlZGJhY2sgQ2xvY2sgTVVYIDEsRmVlZGJhY2sgQ2xvY2sgTVVYIDIsTSBDb3VudGVyIFNvdXJjZSBNVVgsUExMIEF1dG8gUmVzZXQ=::UGFyYW1ldGVyIE5hbWVz"
 -set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw0LDQsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMiwyMCw0MDAwLDQyOS41NDU0IE1IeiwyNTM3OTMwNTM1LG5vbmUsZ2xiLG1fY250LHBoX211eF9jbGssdHJ1ZQ==::UGFyYW1ldGVyIFZhbHVlcw=="
-+set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw0LDQsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMiwyMCw0MDAwLDQzMC43OTM5OTkgTUh6LDI2NDUxODQzNzIsbm9uZSxnbGIsbV9jbnQscGhfbXV4X2Nsayx0cnVl::UGFyYW1ldGVyIFZhbHVlcw=="
++set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw0LDQsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMiwyMCw0MDAwLDQzMC44NTcxMiBNSHosMjY1MDYwNjQyNSxub25lLGdsYixtX2NudCxwaF9tdXhfY2xrLHRydWU=::UGFyYW1ldGVyIFZhbHVlcw=="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX21pZl9nZW5lcmF0ZQ==::ZmFsc2U=::R2VuZXJhdGUgTUlGIGZpbGU="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2VuYWJsZV9taWZfZHBz::ZmFsc2U=::RW5hYmxlIER5bmFtaWMgUGhhc2UgU2hpZnQgZm9yIE1JRiBzdHJlYW1pbmc="
  set_global_assignment -entity "pll2_0002" -library "pll2" -name IP_COMPONENT_PARAMETER "Z3VpX2Rwc19jbnRy::QzA=::RFBTIENvdW50ZXIgU2VsZWN0aW9u"
 diff --git a/rtl/pll2.v b/rtl/pll2.v
-index dd4f7f1..fff2e20 100644
+index dd4f7f1..69ce7dc 100644
 --- a/rtl/pll2.v
 +++ b/rtl/pll2.v
 @@ -1,256 +1,256 @@
@@ -375,7 +1167,7 @@ index dd4f7f1..fff2e20 100644
 +// Retrieval info: 	<generic name="gui_frac_multiply_factor" value="1" />
 +// Retrieval info: 	<generic name="gui_divide_factor_n" value="1" />
 +// Retrieval info: 	<generic name="gui_cascade_counter0" value="false" />
-+// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="53.84925" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="53.85714" />
 +// Retrieval info: 	<generic name="gui_divide_factor_c0" value="1" />
 +// Retrieval info: 	<generic name="gui_actual_output_clock_frequency0" value="0 MHz" />
 +// Retrieval info: 	<generic name="gui_ps_units0" value="ps" />
@@ -561,7 +1353,7 @@ index dd4f7f1..fff2e20 100644
 +// IPFS_FILES : pll2.vo
 +// RELATED_FILES: pll2.v, pll2_0002.v
 diff --git a/rtl/pll2/pll2_0002.v b/rtl/pll2/pll2_0002.v
-index 0e2bacf..b9bfe98 100644
+index 0e2bacf..3c884df 100644
 --- a/rtl/pll2/pll2_0002.v
 +++ b/rtl/pll2/pll2_0002.v
 @@ -1,241 +1,241 @@
@@ -835,7 +1627,7 @@ index 0e2bacf..b9bfe98 100644
 +		.pll_dsm_out_sel("1st_order"),
 +		.operation_mode("direct"),
 +		.number_of_clocks(1),
-+		.output_clock_frequency0("53.849250 MHz"),
++		.output_clock_frequency0("53.857140 MHz"),
 +		.phase_shift0("0 ps"),
 +		.duty_cycle0(50),
 +		.output_clock_frequency1("0 MHz"),
@@ -1028,8 +1820,8 @@ index 0e2bacf..b9bfe98 100644
 +		.pll_vco_div(2),
 +		.pll_cp_current(20),
 +		.pll_bwctrl(4000),
-+		.pll_output_clk_frequency("430.793999 MHz"),
-+		.pll_fractional_division("2645184372"),
++		.pll_output_clk_frequency("430.85712 MHz"),
++		.pll_fractional_division("2650606425"),
 +		.mimic_fbclk_type("none"),
 +		.pll_fbclk_mux_1("glb"),
 +		.pll_fbclk_mux_2("m_cnt"),

@@ -1,0 +1,121 @@
+diff --git a/rtl/pll.qip b/rtl/pll.qip
+index 71eb30c..4f9da25 100644
+--- a/rtl/pll.qip
++++ b/rtl/pll.qip
+@@ -43,10 +43,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2ZyYWNfbXVsdGlwbHlfZmFjdG9y::MjUzNzkzMDUzNQ==::RnJhY3Rpb25hbCBNdWx0aXBseSBGYWN0b3IgKEsp"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3Jfbg==::MQ==::RGl2aWRlIEZhY3RvciAoTi1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjA=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::NTMuNjkzMTc1::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kw::NTMuNzYyNA==::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzA=::OA==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Iw::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MjUzNzkzMDUzNQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MjU4NTUwMTU5Mw==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMA==::OA==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MA==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMA==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+@@ -55,10 +55,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDA=::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUw::NTA=::RHV0eSBDeWNsZQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Nhc2NhZGVfY291bnRlcjE=::ZmFsc2U=::TWFrZSB0aGlzIGEgY2FzY2FkZSBjb3VudGVy"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kx::MTA3LjM4NjM1::RGVzaXJlZCBGcmVxdWVuY3k="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX291dHB1dF9jbG9ja19mcmVxdWVuY3kx::MTA3LjUyNDg=::RGVzaXJlZCBGcmVxdWVuY3k="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2RpdmlkZV9mYWN0b3JfYzE=::NA==::RGl2aWRlIEZhY3RvciAoQy1Db3VudGVyKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9tdWx0aXBseV9mYWN0b3Ix::OA==::QWN0dWFsIE11bHRpcGx5IEZhY3Rvcg=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjE=::MjUzNzkzMDUzNQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjE=::MjU4NTUwMTU5Mw==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMQ==::NA==::QWN0dWFsIERpdmlkZSBGYWN0b3I="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MQ==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMQ==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
+@@ -258,10 +258,10 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BoYXNlX3NoaWZ0X2RlZzE3::MC4w::UGhhc2UgU2hpZnQ="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDE3::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2R1dHlfY3ljbGUxNw==::NTA=::RHV0eSBDeWNsZQ=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::NTMuNjkzMTc1IE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA=::NTMuNzYyNDAwIE1Ieg==::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTA="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQw::MCBwcw==::cGhhc2Vfc2hpZnQw"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTA=::NTA=::ZHV0eV9jeWNsZTA="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE=::MTA3LjM4NjM1MCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE=::MTA3LjUyNDgwMCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTE="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGhhc2Vfc2hpZnQx::MCBwcw==::cGhhc2Vfc2hpZnQx"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "ZHV0eV9jeWNsZTE=::NTA=::ZHV0eV9jeWNsZTE="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI=::MCBNSHo=::b3V0cHV0X2Nsb2NrX2ZyZXF1ZW5jeTI="
+@@ -456,15 +456,15 @@ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAM
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX3Zjb19kaXY=::Mg==::cGxsX3Zjb19kaXY="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2NwX2N1cnJlbnQ=::MjA=::cGxsX2NwX2N1cnJlbnQ="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2J3Y3RybA==::NDAwMA==::cGxsX2J3Y3RybA=="
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5::NDI5LjU0NTQgTUh6::cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24=::MjUzNzkzMDUzNQ==::cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5::NDMwLjA5OTIgTUh6::cGxsX291dHB1dF9jbGtfZnJlcXVlbmN5"
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24=::MjU4NTUwMTU5Mw==::cGxsX2ZyYWN0aW9uYWxfZGl2aXNpb24="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "bWltaWNfZmJjbGtfdHlwZQ==::bm9uZQ==::bWltaWNfZmJjbGtfdHlwZQ=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2ZiY2xrX211eF8x::Z2xi::cGxsX2ZiY2xrX211eF8x"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX2ZiY2xrX211eF8y::bV9jbnQ=::cGxsX2ZiY2xrX211eF8y"
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX21fY250X2luX3NyYw==::cGhfbXV4X2Nsaw==::cGxsX21fY250X2luX3NyYw=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "cGxsX3NsZl9yc3Q=::dHJ1ZQ==::cGxsX3NsZl9yc3Q="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl9saXN0::TS1Db3VudGVyIEhpIERpdmlkZSxNLUNvdW50ZXIgTG93IERpdmlkZSxOLUNvdW50ZXIgSGkgRGl2aWRlLE4tQ291bnRlciBMb3cgRGl2aWRlLE0tQ291bnRlciBCeXBhc3MgRW5hYmxlLE4tQ291bnRlciBCeXBhc3MgRW5hYmxlLE0tQ291bnRlciBPZGQgRGl2aWRlIEVuYWJsZSxOLUNvdW50ZXIgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTAgSGkgRGl2aWRlLEMtQ291bnRlci0wIExvdyBEaXZpZGUsQy1Db3VudGVyLTAgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0wIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTAgSW5wdXQgU291cmNlLEMtQ291bnRlci0wIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTAgT2RkIERpdmlkZSBFbmFibGUsQy1Db3VudGVyLTEgSGkgRGl2aWRlLEMtQ291bnRlci0xIExvdyBEaXZpZGUsQy1Db3VudGVyLTEgQ29hcnNlIFBoYXNlIFNoaWZ0LEMtQ291bnRlci0xIFZDTyBQaGFzZSBUYXAsQy1Db3VudGVyLTEgSW5wdXQgU291cmNlLEMtQ291bnRlci0xIEJ5cGFzcyBFbmFibGUsQy1Db3VudGVyLTEgT2RkIERpdmlkZSBFbmFibGUsVkNPIFBvc3QgRGl2aWRlIENvdW50ZXIgRW5hYmxlLENoYXJnZSBQdW1wIGN1cnJlbnQgKHVBKSxMb29wIEZpbHRlciBCYW5kd2lkdGggUmVzaXN0b3IgKE9obXMpICxQTEwgT3V0cHV0IFZDTyBGcmVxdWVuY3ksSy1GcmFjdGlvbmFsIERpdmlzaW9uIFZhbHVlIChEU00pLEZlZWRiYWNrIENsb2NrIFR5cGUsRmVlZGJhY2sgQ2xvY2sgTVVYIDEsRmVlZGJhY2sgQ2xvY2sgTVVYIDIsTSBDb3VudGVyIFNvdXJjZSBNVVgsUExMIEF1dG8gUmVzZXQ=::UGFyYW1ldGVyIE5hbWVz"
+-set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw0LDQsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMiwyLDEsMCxwaF9tdXhfY2xrLGZhbHNlLGZhbHNlLDIsMjAsNDAwMCw0MjkuNTQ1NCBNSHosMjUzNzkzMDUzNSxub25lLGdsYixtX2NudCxwaF9tdXhfY2xrLHRydWU=::UGFyYW1ldGVyIFZhbHVlcw=="
++set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BhcmFtZXRlcl92YWx1ZXM=::NCw0LDI1NiwyNTYsZmFsc2UsdHJ1ZSxmYWxzZSxmYWxzZSw0LDQsMSwwLHBoX211eF9jbGssZmFsc2UsZmFsc2UsMiwyLDEsMCxwaF9tdXhfY2xrLGZhbHNlLGZhbHNlLDIsMjAsNDAwMCw0MzAuMDk5MiBNSHosMjU4NTUwMTU5Myxub25lLGdsYixtX2NudCxwaF9tdXhfY2xrLHRydWU=::UGFyYW1ldGVyIFZhbHVlcw=="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX21pZl9nZW5lcmF0ZQ==::ZmFsc2U=::R2VuZXJhdGUgTUlGIGZpbGU="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2VuYWJsZV9taWZfZHBz::ZmFsc2U=::RW5hYmxlIER5bmFtaWMgUGhhc2UgU2hpZnQgZm9yIE1JRiBzdHJlYW1pbmc="
+ set_global_assignment -entity "pll_0002" -library "pll" -name IP_COMPONENT_PARAMETER "Z3VpX2Rwc19jbnRy::QzA=::RFBTIENvdW50ZXIgU2VsZWN0aW9u"
+diff --git a/rtl/pll.v b/rtl/pll.v
+index c642c67..71b1d91 100644
+--- a/rtl/pll.v
++++ b/rtl/pll.v
+@@ -32,7 +32,7 @@ endmodule
+ //	************************************************************
+ //	THIS IS A WIZARD-GENERATED FILE. DO NOT EDIT THIS FILE!
+ //	************************************************************
+-//	Copyright (C) 1991-2021 Altera Corporation
++//	Copyright (C) 1991-2023 Altera Corporation
+ //	Any megafunction design, and related net list (encrypted or decrypted),
+ //	support information, device programming or simulation file, and any other
+ //	associated documentation or information provided by Altera or a partner
+@@ -72,7 +72,7 @@ endmodule
+ // Retrieval info: 	<generic name="gui_frac_multiply_factor" value="2537930535" />
+ // Retrieval info: 	<generic name="gui_divide_factor_n" value="1" />
+ // Retrieval info: 	<generic name="gui_cascade_counter0" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="53.693175" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency0" value="53.7624" />
+ // Retrieval info: 	<generic name="gui_divide_factor_c0" value="8" />
+ // Retrieval info: 	<generic name="gui_actual_output_clock_frequency0" value="0 MHz" />
+ // Retrieval info: 	<generic name="gui_ps_units0" value="ps" />
+@@ -81,7 +81,7 @@ endmodule
+ // Retrieval info: 	<generic name="gui_actual_phase_shift0" value="0" />
+ // Retrieval info: 	<generic name="gui_duty_cycle0" value="50" />
+ // Retrieval info: 	<generic name="gui_cascade_counter1" value="false" />
+-// Retrieval info: 	<generic name="gui_output_clock_frequency1" value="107.38635" />
++// Retrieval info: 	<generic name="gui_output_clock_frequency1" value="107.5248" />
+ // Retrieval info: 	<generic name="gui_divide_factor_c1" value="4" />
+ // Retrieval info: 	<generic name="gui_actual_output_clock_frequency1" value="0 MHz" />
+ // Retrieval info: 	<generic name="gui_ps_units1" value="ps" />
+diff --git a/rtl/pll/pll_0002.v b/rtl/pll/pll_0002.v
+index aca46e9..f198078 100644
+--- a/rtl/pll/pll_0002.v
++++ b/rtl/pll/pll_0002.v
+@@ -30,10 +30,10 @@ module  pll_0002(
+ 		.pll_dsm_out_sel("1st_order"),
+ 		.operation_mode("direct"),
+ 		.number_of_clocks(2),
+-		.output_clock_frequency0("53.693175 MHz"),
++		.output_clock_frequency0("53.762400 MHz"),
+ 		.phase_shift0("0 ps"),
+ 		.duty_cycle0(50),
+-		.output_clock_frequency1("107.386350 MHz"),
++		.output_clock_frequency1("107.524800 MHz"),
+ 		.phase_shift1("0 ps"),
+ 		.duty_cycle1(50),
+ 		.output_clock_frequency2("0 MHz"),
+@@ -223,8 +223,8 @@ module  pll_0002(
+ 		.pll_vco_div(2),
+ 		.pll_cp_current(20),
+ 		.pll_bwctrl(4000),
+-		.pll_output_clk_frequency("429.5454 MHz"),
+-		.pll_fractional_division("2537930535"),
++		.pll_output_clk_frequency("430.0992 MHz"),
++		.pll_fractional_division("2585501593"),
+ 		.mimic_fbclk_type("none"),
+ 		.pll_fbclk_mux_1("glb"),
+ 		.pll_fbclk_mux_2("m_cnt"),

@@ -1,0 +1,43 @@
+Formula: scanlines per frame * clock cycles per scanline * 60
+
+Atari7800:
+Only with "Stablize Video" turned on.
+262 * 228 * 60 = 3584160
+
+Gameboy:
+(cribbed from FPGAzumSpass: https://misterfpga.org/viewtopic.php?p=34754#p34754)
+70224 * 60 = 4213440
+
+GBA:
+(ditto)
+280896 * 60 = 16853760
+
+MegaDrive/MegaCD/S32X/SMS:
+262 * 3420 * 60 = 53762400
+
+MSX:
+262 * 1368 * 60 = 21504960
+
+N64:
+263 * 3094 * 60 = 48823320
+
+NeoGeo:
+264 * 3072 * 60 = 48660480
+
+NES/SNES:
+One scanline every other frame is four clock cycles shorter (this is the infamous jitter).
+(261 * 1364 + 1362) * 60 = 21441960
+
+PSX
+263 * 3413 * 60 = 5385714
+
+Saturn:
+Current : 26842600
+Hardware: 26846591 (subcarrier freq * 7.5)
+
+263 * 1708 * 60 = 26924625 (320/640)
+263 * 1820 * 60 = 28719600 (352/704)
+
+TurboGrafx16:
+Ordinarily, games can choose between 262 or 263 lines per frame. I hardcoded this to 263 so that all games run at 60 Hz.
+263 * 1365 * 60 = 21539700

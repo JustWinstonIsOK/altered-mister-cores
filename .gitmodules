@@ -25,3 +25,22 @@
 [submodule "cores/GBA_MiSTer"]
 	path = cores/GBA_MiSTer
 	url = https://github.com/MiSTer-devel/GBA_MiSTer.git
+[submodule "Gameboy_MiSTer"]
+	path = cores/Gameboy_MiSTer
+	url = https://github.com/MiSTer-devel/Gameboy_MiSTer.git
+[submodule "MSX1_MiSTer"]
+	path = cores/MSX1_MiSTer
+	url = https://github.com/MiSTer-devel/MSX1_MiSTer.git
+	branch = MSX2
+[submodule "cores/SMS_MiSTer"]
+	path = cores/SMS_MiSTer
+	url = https://github.com/MiSTer-devel/SMS_MiSTer.git
+[submodule "cores/S32X_MiSTer"]
+	path = cores/S32X_MiSTer
+	url = https://github.com/MiSTer-devel/S32X_MiSTer.git
+[submodule "cores/Atari7800_MiSTer"]
+	path = cores/Atari7800_MiSTer
+	url = https://github.com/MiSTer-devel/Atari7800_MiSTer.git
+[submodule "cores/Saturn_MiSTer"]
+	path = cores/Saturn_MiSTer
+	url = https://github.com/MiSTer-devel/Saturn_MiSTer.git
