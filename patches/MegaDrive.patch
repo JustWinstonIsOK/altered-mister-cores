@@ -1,8 +1,8 @@
-diff --git a/SMS.sv b/SMS.sv
-index ecb72f0..e92ac72 100644
---- a/SMS.sv
-+++ b/SMS.sv
-@@ -381,7 +381,7 @@ always @(posedge CLK_50M) begin
+diff --git a/MegaDrive.sv b/MegaDrive.sv
+index 1bae9f3..4e21d28 100644
+--- a/MegaDrive.sv
++++ b/MegaDrive.sv
+@@ -332,7 +332,7 @@ always @(posedge CLK_50M) begin
  				end
  			5: begin
  					cfg_address <= 7;

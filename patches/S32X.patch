@@ -1,8 +1,8 @@
-diff --git a/SMS.sv b/SMS.sv
-index ecb72f0..e92ac72 100644
---- a/SMS.sv
-+++ b/SMS.sv
-@@ -381,7 +381,7 @@ always @(posedge CLK_50M) begin
+diff --git a/S32X.sv b/S32X.sv
+index 68b53a9..d284bc8 100644
+--- a/S32X.sv
++++ b/S32X.sv
+@@ -479,7 +479,7 @@ always @(posedge CLK_50M) begin
  				end
  			5: begin
  					cfg_address <= 7;

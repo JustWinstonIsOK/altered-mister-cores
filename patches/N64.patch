@@ -1,7 +1,16 @@
 diff --git a/N64.sv b/N64.sv
-index 7350de5..7c71a61 100644
+index 7350de5..4f56a20 100644
 --- a/N64.sv
 +++ b/N64.sv
+@@ -345,7 +345,7 @@ always @(posedge CLK_50M) begin : cfg_block
+ 				end
+ 			3: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pald2 ? 4024384270 : 3274482981;
++					cfg_data <= pald2 ? 4067935325 : 3385282915;
+ 					cfg_write <= 1;
+ 				end
+ 			5: begin
 @@ -942,15 +942,15 @@ always @(posedge clk_1x) begin
     end else begin
        if (status[79]) begin // PAL

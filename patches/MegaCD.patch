@@ -1,0 +1,13 @@
+diff --git a/MegaCD.sv b/MegaCD.sv
+index c9e77e0..3779543 100644
+--- a/MegaCD.sv
++++ b/MegaCD.sv
+@@ -297,7 +297,7 @@ always @(posedge CLK_50M) begin
+ 				end
+ 			5: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pal_r ? 2201376125 : 2537930535;
++					cfg_data <= pal_r ? 2420987080 : 2585501593;
+ 					cfg_write <= 1;
+ 				end
+ 			7: begin

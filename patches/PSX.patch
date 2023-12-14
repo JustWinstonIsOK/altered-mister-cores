@@ -1,7 +1,16 @@
 diff --git a/PSX.sv b/PSX.sv
-index d55e799..428a3f0 100644
+index d55e799..94833f2 100644
 --- a/PSX.sv
 +++ b/PSX.sv
+@@ -294,7 +294,7 @@ always @(posedge CLK_50M) begin : cfg_block
+ 				end
+ 			5: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pffw2 ? 2147483648 : pdbg2 ? 551954751 : pald2 ? 2201376898 : 2537930535;
++					cfg_data <= pffw2 ? 2147483648 : pdbg2 ? 551954751 : pald2 ? 2387452061 : 2650606425;
+ 					cfg_write <= 1;
+ 				end
+ 			7: begin
 @@ -1609,8 +1609,8 @@ logic [11:0] hb_end_lut[8];
  logic [11:0] hb_start, hb_end;
  
