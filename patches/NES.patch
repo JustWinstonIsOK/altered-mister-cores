@@ -1,5 +1,5 @@
 diff --git a/NES.sv b/NES.sv
-index a126334..43584dc 100644
+index a126334..b3ed7d8 100644
 --- a/NES.sv
 +++ b/NES.sv
 @@ -191,7 +191,7 @@ video_freak video_freak
@@ -11,6 +11,15 @@ index a126334..43584dc 100644
  	.ARY((!ar) ? (hide_overscan ? 12'd49 : 12'd105) : 12'd0),
  	.CROP_SIZE((en216p & vcrop_en) ? 10'd216 : 10'd0),
  	.CROP_OFF(voff),
+@@ -508,7 +508,7 @@ always @(posedge CLK_50M) begin : cfg_block
+ 				end
+ 			3: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pald2 ? 2201376898 : 2537933971;
++					cfg_data <= pald2 ? 2196274391 : 2477268417;
+ 					cfg_write <= 1;
+ 				end
+ 			5: begin
 diff --git a/rtl/video.sv b/rtl/video.sv
 index 1b647c7..55bdb0b 100644
 --- a/rtl/video.sv

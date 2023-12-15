@@ -1,0 +1,13 @@
+diff --git a/SNES.sv b/SNES.sv
+index 6ca0c02..fa6bbe3 100644
+--- a/SNES.sv
++++ b/SNES.sv
+@@ -271,7 +271,7 @@ always @(posedge CLK_50M) begin
+ 				end
+ 			3: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pald2 ? 2201376898 : 2537930535;
++					cfg_data <= pald2 ? 2196274391 : 2477268417;
+ 					cfg_write <= 1;
+ 				end
+ 			5: begin
