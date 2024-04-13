@@ -1,46 +1,46 @@
-[submodule "NES_MiSTer"]
-	path = cores/NES_MiSTer
-	url = https://github.com/MiSTer-devel/NES_MiSTer.git
-[submodule "SNES_MiSTer"]
-	path = cores/SNES_MiSTer
-	url = https://github.com/MiSTer-devel/SNES_MiSTer.git
-[submodule "N64"]
-	path = cores/N64_MiSTer
-	url = https://github.com/RobertPeip/Mister64.git
-[submodule "MegaDrive_MiSTer"]
-	path = cores/MegaDrive_MiSTer
-	url = https://github.com/MiSTer-devel/MegaDrive_MiSTer.git
-[submodule "TurboGrafx16_MiSTer"]
-	path = cores/TurboGrafx16_MiSTer
-	url = https://github.com/MiSTer-devel/TurboGrafx16_MiSTer.git
-[submodule "MegaCD_MiSTer"]
-	path = cores/MegaCD_MiSTer
-	url = https://github.com/MiSTer-devel/MegaCD_MiSTer.git
-[submodule "PSX_MiSTer"]
-	path = cores/PSX_MiSTer
-	url = https://github.com/MiSTer-devel/PSX_MiSTer.git
-[submodule "NeoGeo_MiSTer"]
-	path = cores/NeoGeo_MiSTer
-	url = https://github.com/MiSTer-devel/NeoGeo_MiSTer.git
-[submodule "cores/GBA_MiSTer"]
-	path = cores/GBA_MiSTer
-	url = https://github.com/MiSTer-devel/GBA_MiSTer.git
-[submodule "Gameboy_MiSTer"]
-	path = cores/Gameboy_MiSTer
-	url = https://github.com/MiSTer-devel/Gameboy_MiSTer.git
-[submodule "MSX1_MiSTer"]
-	path = cores/MSX1_MiSTer
-	url = https://github.com/MiSTer-devel/MSX1_MiSTer.git
-	branch = MSX2
-[submodule "cores/SMS_MiSTer"]
-	path = cores/SMS_MiSTer
-	url = https://github.com/MiSTer-devel/SMS_MiSTer.git
-[submodule "cores/S32X_MiSTer"]
-	path = cores/S32X_MiSTer
-	url = https://github.com/MiSTer-devel/S32X_MiSTer.git
 [submodule "cores/Atari7800_MiSTer"]
 	path = cores/Atari7800_MiSTer
 	url = https://github.com/MiSTer-devel/Atari7800_MiSTer.git
+[submodule "cores/Gameboy_MiSTer"]
+	path = cores/Gameboy_MiSTer
+	url = https://github.com/MiSTer-devel/Gameboy_MiSTer.git
+[submodule "cores/GBA_MiSTer"]
+	path = cores/GBA_MiSTer
+	url = https://github.com/MiSTer-devel/GBA_MiSTer.git
+[submodule "cores/MegaCD_MiSTer"]
+	path = cores/MegaCD_MiSTer
+	url = https://github.com/MiSTer-devel/MegaCD_MiSTer.git
+[submodule "cores/MegaDrive_MiSTer"]
+	path = cores/MegaDrive_MiSTer
+	url = https://github.com/MiSTer-devel/MegaDrive_MiSTer.git
+[submodule "cores/MSX1_MiSTer"]
+	path = cores/MSX1_MiSTer
+	url = https://github.com/MiSTer-devel/MSX1_MiSTer.git
+	branch = MSX2
+[submodule "cores/N64_MiSTer"]
+	path = cores/N64_MiSTer
+	url = https://github.com/MiSTer-devel/N64_MiSTer.git
+[submodule "cores/NeoGeo_MiSTer"]
+	path = cores/NeoGeo_MiSTer
+	url = https://github.com/MiSTer-devel/NeoGeo_MiSTer.git
+[submodule "cores/NES_MiSTer"]
+	path = cores/NES_MiSTer
+	url = https://github.com/MiSTer-devel/NES_MiSTer.git
+[submodule "cores/PSX_MiSTer"]
+	path = cores/PSX_MiSTer
+	url = https://github.com/MiSTer-devel/PSX_MiSTer.git
+[submodule "cores/S32X_MiSTer"]
+	path = cores/S32X_MiSTer
+	url = https://github.com/MiSTer-devel/S32X_MiSTer.git
 [submodule "cores/Saturn_MiSTer"]
 	path = cores/Saturn_MiSTer
 	url = https://github.com/MiSTer-devel/Saturn_MiSTer.git
+[submodule "cores/SMS_MiSTer"]
+	path = cores/SMS_MiSTer
+	url = https://github.com/MiSTer-devel/SMS_MiSTer.git
+[submodule "cores/SNES_MiSTer"]
+	path = cores/SNES_MiSTer
+	url = https://github.com/MiSTer-devel/SNES_MiSTer.git
+[submodule "cores/TurboGrafx16_MiSTer"]
+	path = cores/TurboGrafx16_MiSTer
+	url = https://github.com/MiSTer-devel/TurboGrafx16_MiSTer.git
