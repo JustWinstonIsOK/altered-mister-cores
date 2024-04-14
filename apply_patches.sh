@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo Hard-resetting all submodules...
 git submodule foreach git reset --hard > /dev/null
@@ -20,7 +20,7 @@ patch_core () {
 
 patch_core Atari7800 ascal
 patch_core Gameboy ascal
-patch_core GBA ascal
+patch_core GBA ascal video_mixer
 patch_core MegaCD ascal video_mixer
 patch_core MegaDrive ascal
 patch_core MSX1 ascal
