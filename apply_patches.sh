@@ -30,6 +30,7 @@ patch_core NES ascal
 patch_core PSX ascal
 patch_core S32X ascal
 patch_core Saturn ascal video_mixer
+patch_core SGB ascal
 patch_core SMS ascal
 patch_core SNES ascal video_mixer
 patch_core TurboGrafx16 ascal video_mixer

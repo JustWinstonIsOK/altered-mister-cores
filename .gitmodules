@@ -35,6 +35,9 @@
 [submodule "cores/Saturn_MiSTer"]
 	path = cores/Saturn_MiSTer
 	url = https://github.com/MiSTer-devel/Saturn_MiSTer.git
+[submodule "cores/SGB_MiSTer"]
+	path = cores/SGB_MiSTer
+	url = https://github.com/MiSTer-devel/SGB_MiSTer.git
 [submodule "cores/SMS_MiSTer"]
 	path = cores/SMS_MiSTer
 	url = https://github.com/MiSTer-devel/SMS_MiSTer.git

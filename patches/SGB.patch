@@ -1,0 +1,31 @@
+diff --git a/SGB.sv b/SGB.sv
+index 90473de..d686426 100644
+--- a/SGB.sv
++++ b/SGB.sv
+@@ -272,7 +272,7 @@ always @(posedge CLK_50M) begin
+ 				end
+ 			3: begin
+ 					cfg_address <= 7;
+-					cfg_data <= pald2 ? 2201376898 : 2537930535;
++					cfg_data <= pald2 ? 2196274391 : 2477268417;
+ 					cfg_write <= 1;
+ 				end
+ 			5: begin
+diff --git a/rtl/chip/SGB/ICD2.v b/rtl/chip/SGB/ICD2.v
+index ac801ff..4b9e494 100644
+--- a/rtl/chip/SGB/ICD2.v
++++ b/rtl/chip/SGB/ICD2.v
+@@ -109,10 +109,10 @@ always @(posedge clk) begin
+ 	end
+ end
+ 
+-localparam MCLK_NTSC = 21477270;
+-localparam MCLK_PAL  = 21281370;
++localparam MCLK_NTSC = 21441960;
++localparam MCLK_PAL  = 21278400;
+ localparam MCLK_SGB2 = 20971520;
+-localparam MCLK_SNES = 21101890; // Closest to 60.09Hz refresh rate to avoid stutter
++localparam MCLK_SNES = 21067200;
+ 
+ // CEGen for async clock dividers (SGB2 & SNES speed)
+ always @(posedge clk) begin
