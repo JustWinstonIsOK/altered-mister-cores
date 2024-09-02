@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-set -ex
+set -x
 
-QUARTUS_SH=/c/intelFPGA_lite/17.0/quartus/bin64/quartus_sh
+QUARTUS_SH=/opt/intelFPGA_lite/17.0/quartus/bin/quartus_sh
 
 mkdir -p out
 
-for CORE_DIRECTORY in $(find cores/ -maxdepth 1 -type d -name "*_MiSTer" -and -not -name "TurboGrafx16_MiSTer"); do
-    cd "$CORE_DIRECTORY"
-    QPF_NAMES=($(ls *.qpf))
-    RBF_NAME=$(basename ${QPF_NAMES[0]} .qpf)
+for CORE_DIRECTORY in $(ls cores); do
+    cd "cores/$CORE_DIRECTORY"
+    RBF_NAME=$(basename "$CORE_DIRECTORY" _MiSTer)
     "$QUARTUS_SH" --flow compile "$RBF_NAME" > ../../out/"$RBF_NAME".log
     cp -f output_files/"$RBF_NAME".rbf ../../out
     cd ../..
