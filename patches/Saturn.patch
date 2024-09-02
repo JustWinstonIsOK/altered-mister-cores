@@ -1,15 +1,26 @@
 diff --git a/Saturn.sv b/Saturn.sv
-index abf78ae..05d4228 100644
+index 2153c37..3b04d0c 100644
 --- a/Saturn.sv
 +++ b/Saturn.sv
-@@ -502,8 +502,8 @@ module emu
+@@ -508,8 +508,8 @@ module emu
  					end
  				5: begin
  						cfg_address <= 7;
--						cfg_data <= !pald2 ? (!dotsel2 ? 32'h96F21F6D : 32'h29E3FEC3) :
+-						cfg_data <= !pald2 ? (!dotsel2 ? 32'h9986B96D : 32'h29E4D329) :
 -						                     (!dotsel2 ? 32'h8A3D70A4 : 32'h1999999A);
 +						cfg_data <= !pald2 ? (!dotsel2 ? 32'h9FED705B : 32'h30B5AA1B) :
 +						                     (!dotsel2 ? 32'h8DBCEC85 : 32'h1D53CD88);
  						cfg_write <= 1;
  					end
  				7: begin
+@@ -684,8 +684,8 @@ module emu
+ 	
+ 	reg [31:0] in_clk;
+ 	always @(posedge clk_sys) 
+-		in_clk <= !PAL ? (!SMPC_DOTSEL ? 53748200 : 57272800) :
+-	                    (!SMPC_DOTSEL ? 53375000 : 56875000);
++		in_clk <= !PAL ? (!SMPC_DOTSEL ? 53904480 : 57439200) :
++	                    (!SMPC_DOTSEL ? 53460400 : 56966000);
+ 
+ 	
+ 	wire SMPC_CE;		//SMPC clock 4.0000MHz
