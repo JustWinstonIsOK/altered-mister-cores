@@ -18,19 +18,19 @@ patch_core () {
     fi 
 }
 
-patch_core Atari7800 ascal
-patch_core Gameboy ascal
+patch_core Atari7800 ascal video_mixer
+patch_core Gameboy ascal video_mixer
 patch_core GBA ascal video_mixer
 patch_core MegaCD ascal video_mixer
-patch_core MegaDrive ascal
-patch_core MSX1 ascal
-patch_core N64 ascal
-patch_core NeoGeo ascal
-patch_core NES ascal
-patch_core PSX ascal
-patch_core S32X ascal
+patch_core MegaDrive ascal video_mixer
+patch_core MSX1 ascal video_mixer
+patch_core N64 ascal video_mixer
+patch_core NeoGeo ascal video_mixer
+patch_core NES ascal video_mixer
+patch_core PSX ascal video_mixer
+patch_core S32X ascal viedo_mixer
 patch_core Saturn ascal video_mixer
-patch_core SGB ascal
-patch_core SMS ascal
+patch_core SGB ascal video_mixer
+patch_core SMS ascal video_mixer
 patch_core SNES ascal video_mixer
 patch_core TurboGrafx16 ascal video_mixer

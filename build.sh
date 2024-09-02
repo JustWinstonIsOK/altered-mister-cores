@@ -8,7 +8,8 @@ mkdir -p out
 for CORE_DIRECTORY in $(ls cores); do
     cd "cores/$CORE_DIRECTORY"
     RBF_NAME=$(basename "$CORE_DIRECTORY" _MiSTer)
-    "$QUARTUS_SH" --flow compile "$RBF_NAME" > ../../out/"$RBF_NAME".log
+    "$QUARTUS_SH" --clean "$RBF_NAME" > ../../out/"$RBF_NAME".log
+    "$QUARTUS_SH" --flow compile "$RBF_NAME" >> ../../out/"$RBF_NAME".log
     cp -f output_files/"$RBF_NAME".rbf ../../out
     cd ../..
 done
